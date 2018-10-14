@@ -1,0 +1,33 @@
+app.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'proj';
+
+ujjwal:string = 'UJJWAL';
+technical:string ='TECHNICAL';
+phone:number = 3434343;
+tips:string ='TIPS';
+multipleclass:string = 'fontcolor bgcolor';
+
+funname():string 
+{
+return this.ujjwal + this.technical;
+}
+clickMessage = '';
+onClickMe() {
+  this.clickMessage = 'You are my hero!';
+}
+
+
+}
+----------------------------------------------------------------
+app.component.html
+
+<button (click)="onClickMe()">Click me!</button>
+{{clickMessage}}`
