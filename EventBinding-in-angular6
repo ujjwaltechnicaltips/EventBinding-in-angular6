@@ -31,3 +31,19 @@ app.component.html
 
 <button (click)="onClickMe()">Click me!</button>
 {{clickMessage}}`
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++
+  firstname :string ="pushpendra";
+   phone : number=88888;
+   clickme()
+   {
+    this.firstname="ujjwal Technical Tips";
+   }
+
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++
+{{firstname + phone}}
+<button type="button" (click)="clickme()">button</button>
